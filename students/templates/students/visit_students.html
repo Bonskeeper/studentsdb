@@ -1,0 +1,61 @@
+{% extends "students/base.html" %}
+{% load staticfiles %}
+
+{% block meta_title %}Журнал вiдвiдування{% endblock meta_title %}
+{% block meta_title_2 %}журнал облiку{% endblock meta_title_2 %}
+
+{% block title %}Вiдвiдування{% endblock title %}
+
+{% block content %}
+   <!-- Start Students Listing -->
+   <center style="margin-bottom:20px"><b><a href="#">&larr;</a>Жовтень 2016<a href="#">&rarr;</a></b></center>
+   <table class="table table-hover table-striped table-bordered">
+   <thead>
+      <tr>
+          <th>#</a></th>
+          <th>Студент</a></th>
+          <th>Пт<br>1</th>
+          <th>Сб<br>2</th>
+          <th>Нд<br>3</th>
+          <th>Пн<br>4</th>
+          <th>Вт<br>5</th>
+          <th>Ср<br>6</th>
+          <th>Чт<br>7</th>
+          <th>Пт<br>8</th>
+          <th>Сб<br>9</th>
+          <th>Нд<br>10</th>
+          <th>Пн<br>11</th>
+          <th>Вт<br>12</th>
+          <th>Ср<br>13</th>
+          <th>Чт<br>14</th>
+          <th>Пт<br>15</th>
+          <th>Сб<br>16</th>
+          <th>Нд<br>17</th>
+          <th>Пн<br>18</th>
+          <th>Вт<br>19</th>
+          <th>Ср<br>20</th>
+          <th>Чт<br>21</th>
+          <th>Пт<br>22</th>
+          <th>Сб<br>23</th>
+          <th>Нд<br>24</th>
+          <th>Пн<br>25</th>
+          <th>Вт<br>26</th>
+          <th>Ср<br>27</th>
+          <th>Чт<br>28</th>
+          <th>Пт<br>29</th>
+          <th>Сб<br>30</th>
+      </tr>
+   </thead>
+   <tbody>
+   {% for journal in journals %}
+      <tr>
+          <th>{{ forloop.counter }}</th>
+          <th><a href="{% url 'students_edit' journal.id %}">{{ journal.name }}</a></th>
+          {% for i in "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" %}
+          <th><input type="checkbox"></th>
+          {% endfor %}
+      </tr>
+   {% endfor %}
+   </tbody>
+   </table>
+{% endblock content %}

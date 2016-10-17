@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+<meta charset="UTF-8"/>
+<title>Сервіс Обліку Студентів</title>
+<meta name="description - Система Обліку Студентів Навчального Закладу" />
+
+<!-- Include Styles -->
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap.min.css">
+<link rel="stylesheet"
+href="http://localhost:8000/static/css/main.css">
+</head>
+<body>
+<!-- Start Container -->
+<div class="container">
+<!-- Start Header -->
+<div class="row" id="header">
+<!-- Logo -->
+<div class="col-xs-8">
+<h1>Сервіс Обліку Студентів</h1>
+</div>
+<!-- Groups Selector -->
+<div class="col-xs-4" id="group-selector">
+<strong>Група:</strong>
+<select>
+<option value="">Усі Студенти</option>
+<option value="">МтМ - 21, Подоба Віталій (№ 254)</option>
+<option value="">МтМ - 22, Корост Андрій (№ 2123)</option>
+<option value="">МтМ - 23, Притула Тарас (№ 5332)</option>
+</select>
+</div>
+</div>
+<!-- End Header -->
+
+<!-- Start SubHeader -->
+<div class="row" id="sub-header">
+<div class="col-xs-12">
+<ul class="nav nav-tabs" role="tablist">
+<li role="presentation"><a href="{% url 'home' %}">Студенти</a></li>
+<li role="presentation" class="active"><a href="{% url 'journal' %}">Відвідування</a></li>
+<li role="presentation"><a href="{% url 'groups' %}">Групи</a></li>
+</ul>
+</div>
+</div>
+<!-- End SubHeader -->
+    <!-- Start Main Page Content -->
+<div class="row" id="content-columns">
+<div class="col-xs-12" id="content-column">
+<!-- Status Message -->
+    <h2>Облiк вiдвiдування</h2>
+    <!-- Add Student Button -->
+<center>
+<nav>
+<ul class="pagination">
+<li><a href="#">&laquo;--</a></li>
+<li><a>Жовтень</a></li>
+<li><a href="#">--&raquo;</a></li>
+</ul>
+</nav>
+</center>
+    <!-- Start Students Listing -->
+<!-- Start Students Listing -->
+<table border = "2" width = "100%" id="table-journal">
+<thead></thead>
+    <tbody>
+    <tr>
+    <td colspan = "1" align = "center">#</td>
+    <td colspan = "1" rowspan = "1" align = "center">Студент</td>
+    <td colspan = "1" rowspan = "1" align = "center">Ср<br>1</td>
+    <td colspan = "1" rowspan = "1" align = "center">Чт<br>2</td>
+    <td colspan = "1" rowspan = "1" align = "center">Пт<br>3</td>
+    <td colspan = "1" rowspan = "1" align = "center">Сб<br>4</td>
+    <td colspan = "1" rowspan = "1" align = "center">Нд<br>5</td>
+    <td colspan = "1" rowspan = "1" align = "center">Пн<br>6</td>
+    <td colspan = "1" rowspan = "1" align = "center">Вт<br>7</td>
+    <td colspan = "1" rowspan = "1" align = "center">Ср<br>8</td>
+    <td colspan = "1" rowspan = "1" align = "center">Чт<br>9</td>
+    <td colspan = "1" rowspan = "1" align = "center">Пт<br>10</td>
+    <td colspan = "1" rowspan = "1" align = "center">Сб<br>11</td>
+    <td colspan = "1" rowspan = "1" align = "center">Нд<br>12</td>
+    <td colspan = "1" rowspan = "1" align = "center">Пн<br>13</td>
+    <td colspan = "1" rowspan = "1" align = "center">Вт<br>14</td>
+    <td colspan = "1" rowspan = "1" align = "center">Ср<br>15</td>
+    <td colspan = "1" rowspan = "1" align = "center">ЧТ<br>16</td>
+    <td colspan = "1" rowspan = "1" align = "center">Пт<br>17</td>
+    <td colspan = "1" rowspan = "1" align = "center">Сб<br>18</td>
+    <td colspan = "1" rowspan = "1" align = "center">Нд<br>19</td>
+    <td colspan = "1" rowspan = "1" align = "center">Пн<br>20</td>
+    <td colspan = "1" rowspan = "1" align = "center">Вт<br>21</td>
+    <td colspan = "1" rowspan = "1" align = "center">Ср<br>22</td>
+    <td colspan = "1" rowspan = "1" align = "center">Чт<br>23</td>
+    <td colspan = "1" rowspan = "1" align = "center">Пт<br>24</td>
+    <td colspan = "1" rowspan = "1" align = "center">Сб<br>25</td>
+    <td colspan = "1" rowspan = "1" align = "center">Нд<br>26</td>
+    <td colspan = "1" rowspan = "1" align = "center">Пн<br>27</td>
+    <td colspan = "1" rowspan = "1" align = "center">Вт<br>28</td>
+    <td colspan = "1" rowspan = "1" align = "center">Ср<br>29</td>
+    <td colspan = "1" rowspan = "1" align = "center">Чт<br>30</td>
+    <td colspan = "1" rowspan = "1" align = "center">Пт<br>31</td>
+  </tr>
+  <tr>
+    <td colspan = "1" align = "center">1</td>
+    <td colspan = "1" rowspan = "1" align = "center"><a href="#">Подоба <br>Виталiй</a></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+  </tr>
+  <tr>
+    <td colspan = "1" align = "center">2</td>
+    <td colspan = "1" rowspan = "1" align = "center"><a href="#">Корост <br> Андрiй</a></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+  </tr>
+    <tr>
+    <td colspan = "1" align = "center">3</td>
+    <td colspan = "1" rowspan = "1" align = "center"><a href="#">Притула <br> Тарас</a></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+    <td colspan = "1" rowspan = "1" align = "center"><input type="checkbox" unchecked></td>
+  </tr>
+</tbody>
+</table>
+<!-- End Students Listing -->
+
+</div>
+</div>
+<!-- End Main Page Content -->
+<!-- Start Footer -->
+<div class="row" id="footer">
+<div class="col-xs-12">
+&copy; 2014 Сервіс Обліку Студентів</div>
+</div>
+<!-- End Footer -->
+
+
+</div>
+<!-- End Container -->
+
+
+<!-- Javascripts Section -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+
+<script src="https://cdn.jsdelivr.net/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>

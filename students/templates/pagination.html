@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #555555
+}
+
+ul.pagination li a.active {
+    background-color: #428bca;
+    color: white;
+    border-radius: 5px;
+}
+
+ul.pagination li a:hover:not(.active) {background-color: #ddd;}
+
+ul.pagination li a.prev {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0px 4px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+ul.pagination li a.prev1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+    border-radius: 50%
+}
+
+ul.pagination li a.prev1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+ul.pagination li a.next {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0px 4px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+ul.pagination li a.next1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA;
+    border-radius: 50%;
+}
+
+ul.pagination li a.next1:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+</style>
+</head>
+<body>
+
+<ul class="pagination">
+B  <li><a class="active" href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a class="next next1" href="#">Next ❯</a></li>
+</ul>
+
+</body>
+</html>
